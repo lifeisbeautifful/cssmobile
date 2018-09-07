@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Sawarabi+Mincho');
+
+:root{
+     font-family: 'Sawarabi Mincho', sans-serif;
+     
+ }
+
+body{
+    max-width: 800px;
+    margin: auto;
+    background-color: #F5F5F5;
+    
+}
+
+header{
+    
+    background-color: #8B0000;
+    color: #FFE4E1;
+    font-size: 20px;
+    padding: 2%;
+  
+}
+
+
+header .logo{
+    margin-top: 15px;
+}
+
+header .namesecond{
+     color: #FFFF00;
+    font-size: 30px;
+}
+
+
+.name{
+    color: #FFFF00;
+    font-size: 30px;
+    
+}
+
+
+
+
+.wrap{
+    margin-top: 10px;
+    
+    width: 60px;
+    background-color:#8B0000;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 40px;
+    font-family: "Arial";
+}
+#check{
+    display: none;
+}
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: z;
+    line-height: 40px;
+}
+
+.burgerline{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    transition: .5s all;
+}
+
+.second, .thirth{
+    top: 18px;
+}
+
+.four{
+    top: 28px;
+}
+
+.menu{
+    display: block;
+    position: absolute;
+    width: 200%;
+    bottom: 0;
+    left: 0;
+    transform:translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+}
+
+ header a{
+    display: block;
+    width: 94%;
+    padding: 10px;
+    color: white; 
+    text-decoration: none;
+    border-top:1px solid rgba(255,255,255,.3);
+    background-color:  #8B0000;
+}
+
+#check:checked~.menu{
+   max-height: 500px; 
+   font-size: 16px;
+}
+
+#check:checked~.first{
+    display: none;
+}
+
+#check:checked~.second{
+    transform: rotate(45deg);
+}
+
+#check:checked~.thirth{
+    transform: rotate(-45deg);
+}
+
+#check:checked~.four{
+    display: none;
+}
+
+
+main #top {
+     font-family:  'Uncial Antiqua', cursive;
+     text-align: center;
+     font-size: 30px;
+}
+
+main #topfoto{ 
+    background-repeat: no-repeat;
+    background-image: url(../.jpg);
+    margin-left: 3%;
+    margin-right: 3%;
+   
+}
+
+
+    
+footer{
+   margin-bottom: 10px;
+    color:#FFFFE0;
+    font-size: 10px;
+    margin-bottom: 10px;
+    background-color:#8B0000; 
+
+  }
+
+
+footer nav ul li a{
+    color:#FFFFE0;
+    text-decoration: none;
+  
+   
+}
+
+footer nav ul li{
+    list-style-type: none;
+}
+
+footer div ul li{
+    list-style-type: none;
+}
+
+
+
+
+
+
+footer nav ul li a:hover{
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+footer #button{
+    margin-left: 25px;
+ }
+
+
+@media (min-width:450px) {
+    header .logo{
+       margin-left: 150px;
+       margin-top: -30px;
+    }
+    
+    header{
+        margin-top: 10px;
+    }
+    
+    header .namesecond{
+        margin-left: 300px;
+        margin-top: -45px;
+    }
+    
+    header .number{
+        margin-left: 150px;
+    }
+    
+   
+    header .number{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    
+    main #topfoto{
+        display: grid;
+       grid-template-columns:1fr 1fr;
+    }
+    
+    main #mid{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+       
+        
+    }
+    
+    main .text{
+        margin-left: 50px;
+    }
+    
+    main #street{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+       margin-left: 40px;
+    }
+    
+    footer{
+        display: grid;
+        grid-template-columns:2fr 2fr 1fr;
+       
+    }
+   
+footer #button{
+    margin-right:35px;
+    margin-top: 50px;
+}
+    
+ footer #aboutus{
+     margin-left: 100px;
+ }   
+    
+    
+}
