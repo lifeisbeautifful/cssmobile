@@ -130,6 +130,7 @@ label{
 }
 
 
+
 main #top {
      font-family:  'Uncial Antiqua', cursive;
      text-align: center;
@@ -143,6 +144,7 @@ main #topfoto{
     margin-right: 3%;
    
 }
+
 
 
     
@@ -219,12 +221,14 @@ footer #button{
     main #mid{
         display: grid;
         grid-template-columns:1fr 1fr;
+        margin-top: -15px;
+        grid-column-gap:10px;
        
-        
+
     }
     
     main .text{
-        margin-left: 50px;
+        margin-left: 30px;
     }
     
     main #street{
