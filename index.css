@@ -8,7 +8,7 @@
 body{
     max-width: 800px;
     margin: auto;
-    background-color: #F5F5F5;
+    background-color:#C0C0C0 ;
     
 }
 
@@ -137,13 +137,9 @@ main #top {
      font-size: 30px;
 }
 
-main #topfoto{ 
-    background-repeat: no-repeat;
-    background-image: url(../.jpg);
-    margin-left: 3%;
-    margin-right: 3%;
+
    
-}
+
 
 
 
@@ -212,20 +208,45 @@ footer #button{
         display: grid;
         grid-template-columns:1fr 1fr;
     }
-    
-    main #topfoto{
-        display: grid;
-       grid-template-columns:1fr 1fr;
+    #topfoto{
+       
+        width: 90%;
+        margin-left: 6%;
+        margin-top: 1%;
     }
+   
+    #gallery{
+        float: left;
+        width: 90%;
+    }
+    #gallery img{
+        width: 100%;
+    }
+    .arrowBox{
+        float: left;
+        width: 5%;
+        
+    }
+   .arrowBox img{
+       margin-top: 450%;
+       width: 100%;
+   }
+   .arrowBox img:hover{
+       width: 95%;
+       cursor: pointer;
+   }
+    .arrowBox img:active{
+        width: 85%;
+    }
+    
+    
     
     main #mid{
         display: grid;
         grid-template-columns:1fr 1fr;
-        margin-top: -5px;
-        grid-column-gap:10px;
-       
-
-    }
+        margin-top: 450px;
+        margin-left: 10px;
+       }
      
      main .one{
          margin-bottom: -10px;
@@ -254,6 +275,5 @@ footer #button{
  footer #aboutus{
      margin-left: 100px;
  }   
-    
-    
+
 }
