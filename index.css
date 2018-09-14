@@ -128,7 +128,7 @@ label{
 #check:checked~.four{
     display: none;
 }
-
+ 
 
 
 main #top {
@@ -137,12 +137,29 @@ main #top {
      font-size: 30px;
 }
 
-
-   
-
-
-
-
+footer .btn-primary{
+    border-color: #8B0000; 
+    border:0;
+}
+    
+}
+ footer .btn{
+     border:0;
+ }
+footer .modal-body{
+    text-align: center;
+    font-size: 20px;
+    background-color:#8B0000;  
+}
+footer .modal-footer{
+    background-color: #E9967A;
+}
+footer .modal-header{
+    background-color: #E9967A;
+}
+footer .call{
+    background-color: #E9967A;
+}
     
 footer{
    margin-bottom: 10px;
@@ -152,7 +169,12 @@ footer{
     background-color:#8B0000; 
 
   }
-
+footer .btn {
+    margin-right: 20px;
+    margin-top: 0px;
+    border-color: none;
+    background-color: #8B0000; 
+}
 
 footer nav ul li a{
     color:#FFFFE0;
@@ -244,7 +266,7 @@ footer #button{
     main #mid{
         display: grid;
         grid-template-columns:1fr 1fr;
-        margin-top: 450px;
+        margin-top: 30px;
         margin-left: 10px;
        }
      
