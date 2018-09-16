@@ -129,20 +129,70 @@ label{
     display: none;
 }
  
+ header .put{
+     background-color: #8B0000;
+     
+ }
+  input.button4 {
+  
+  position: relative;
+  display: inline-block;
+  font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+  
+  font-weight: 700;
+  color: rgb(255,255,0);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  text-decoration: none;
+  user-select: none;
+  
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background:  #8B0000 linear-gradient(#8B0000, #0c9c0d);
+  box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+input.button4:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+input.button4:active {
+  top: 1px;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+  box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+@-webkit-keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
 
 
 main #top {
      font-family:  'Uncial Antiqua', cursive;
      text-align: center;
-     font-size: 30px;
+     font-size: 80px;
+     text-shadow: 8px 8px 9px #fff, 8px 8px 10px #FF7F00;
+     color: #8B0000;
 }
+
+#three{
+    width: 100%;
+}
+
 
 footer .btn-primary{
     border-color: #8B0000; 
     border:0;
 }
     
-}
+
+
+
  footer .btn{
      border:0;
  }
@@ -171,7 +221,7 @@ footer{
   }
 footer .btn {
     margin-right: 20px;
-    margin-top: 0px;
+    margin-top: 30px;
     border-color: none;
     background-color: #8B0000; 
 }
@@ -197,7 +247,7 @@ footer div ul li{
 
 
 footer nav ul li a:hover{
-    font-size: 15px;
+    
     text-decoration: underline;
 }
 
@@ -230,6 +280,12 @@ footer #button{
         display: grid;
         grid-template-columns:1fr 1fr;
     }
+    
+    #topbutton{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-column-gap:5px;
+    }
     #topfoto{
        
         width: 90%;
@@ -261,7 +317,54 @@ footer #button{
         width: 85%;
     }
     
+    #mySlide{
     
+    width: 500px;
+    height: 300px;
+ 
+    position: relative;
+    overflow: hidden;
+}
+#one, #two{
+  width: 500px;
+  height: 300px;
+
+  position: absolute;
+ overflow: hidden;
+  
+}
+#one{
+  background:yellow;
+}
+#two{
+  background:blue;
+  display: none;
+}  
+
+
+#mySlide2{
+    
+    width: 500px;
+  height: 300px;
+ 
+ position: relative;
+  overflow: hidden;
+}
+#three, #four{
+  width: 500px;
+  height: 300px;
+
+  position: absolute;
+ overflow: hidden;
+  transition: all ease 200ms;
+}
+#three{
+  background:yellow;
+}
+#four{
+  background:blue;
+  display: none;
+}  
     
     main #mid{
         display: grid;

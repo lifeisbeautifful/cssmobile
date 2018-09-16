@@ -37,16 +37,16 @@
 		   <div>(050)298-09-26</div>
 		   <div>м.Львів вул.Володимира Вуликого 61</div>
 		<div>
-		   <form action="https://www.king-travel.com.ua/garyach-turi/" method="POST">
-			      <input type="text" placeholder="Пошук по сайту">
-				  <input type="button" value="Пошук">
+		   <form id="topbutton" action="https://www.king-travel.com.ua/garyach-turi/" method="POST">
+			      <input class="put" type="text" placeholder="Пошук по сайту">
+                  <input type="button" class="button4" value="Пошук">
 		    </form>
 		 </div>
 		 </div>
     </header>
     <main>
 		  <section id="top">
-		        <h1>Місто з душею лева</h1>
+		        <p>Місто з душею лева</p>
 		   </section>
 		  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
@@ -76,9 +76,24 @@
 		        <span class="text">Місто Лева, Леополіс, Лемберг, Львів ... Його вузенькі, сповнені подихом історії вулички, схожі на чудернацькі павутиння. Єдине місто України , що не зазнало значних спустошень та руйнувань на початку двадцятого століття і прославилося завдяки своєму суто європейському стилю
 	              Львів- місто легенд. Тут кожен дворик, кожен будинок та кожна вулиця дихають власними, неповторними легендами, які тягнуться ще з часів Середньовіччя
 	            </span>
-	            <span class="img"><img src="images/dominican.jpg" width="100%" alt="Домініканський собор"></span>
+	            <div id="mySlide">
+	            	<div id="one">
+	                  <img src="images/фотка1.jpg">
+	            </div>
+	            <div id="four">
+	                  <img src="images/4.jpg">
+	            </div>
+	            </div>
+	            
 	            <span class="text">Місто відоме як осередок художнього, літературного, музичного та театрального мистецтва. Сьогодні незаперечним свідченням культурного багатства міста є велика кількість театрів, концертних залів, творчих об'єднань, а також проведення тут численних мистецьких заходів. Храми, фрески, живопис, традиції, свята, фестивалі – це спадок минулого та витвір сучасного генія, який можна відчути лише у Львові.</span>
-		        <span class="img"><img src="images/eljbet.jpg" width="100%"  alt="Костел Ольги і Єлизавети"></span>
+		        <div id="mySlide2">
+		        	<div id="three">
+		        <img src="images/фотка2.jpg"  alt="Костел Ольги і Єлизавети">
+		        </div>
+		        <div>
+		        	<img id="two"src="images/last.jpg">
+		        </div>
+		        </div>
 		  </section>
 		  <section id="street">
 		        <div><a href="http://visitlviv.net/page/ua/interestinginLviv/"><img src="images/fact.jpg" alt="10 фактів про Львів"></a></div>
@@ -109,11 +124,12 @@
 			  </ul>
 		   </nav>
 	
-		   	  
+	<div class="dangerbutton">  	  
 		   	 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+<button type="button" class="btn btn-danger link" data-toggle="modal" data-target="#exampleModalCenter">
   Зворотній зв'язок
 </button>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -133,7 +149,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
-        <button type="button" class="btn btn-primary">Відправити</button>
+        <button type="button" class="btn btn-success">Відправити</button>
       </div>
     </div>
   </div>
@@ -141,10 +157,11 @@
 	  	    
 		   
     </footer>
+    <script type="text/javascript" src="index.js"></script>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+   
      
     </body>
 </html>

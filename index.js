@@ -1,26 +1,27 @@
-//;(function gallery(){
- //   let leftArrow=document.getElementById('leftArrow');
-   // let rightArrow=document.getElementById('rightArrow');
-    //centerValue=1;
-//    maxImageNumber=8;
-        
-  //      leftArrow.addEventListener('click', moveBackward);
-    //    rightArrow.addEventListener('click', moveForward);
-      //  
-        //function moveBackward(){
-          //  let image=document.getElementById('image');
-            //centerValue--;
-    //        if(centerValue==0){centerValue=maxImageNumber};
-      //      image.setAttribute('src', ''+ centerValue+'.jpg');
-        //};
-        
-    //    function moveForward(){
-      //     let image=document.getElementById('image');
-        //    centerValue++;
-          // if(centerValue> maxImageNumber){centerValue=1}
-        //   image.setAttribute('src', ''+ centerValue+'.jpg');
-    //    };
 
 
+
+window.onload=function(){
+  
+  let image1=document.getElementById('four');
+  let i=0, s=['block', 'none'], t=[2000,2000];
+  function show2 ()
+ {i^=1
+  image1.style.display=s[i];
+  setTimeout(show2,t[i]);
+}
+show2()
+}
+
+let mag=document.getElementById('two');
+setInterval(function(){
+  
+  setTimeout(function(){
     
-//})();
+    mag.style.display='block';
+    setTimeout(function(){
+      
+      mag.style.display='none';
+    },5000);
+  },5000);
+},5000);
