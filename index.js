@@ -13,15 +13,12 @@ window.onload=function(){
 show2()
 }
 
-let mag=document.getElementById('two');
-setInterval(function(){
+let a=function(){
+  
+  let ima=document.getElementById('two');
+  ima.style.display='block';
   
   setTimeout(function(){
-    
-    mag.style.display='block';
-    setTimeout(function(){
-      
-      mag.style.display='none';
-    },5000);
-  },5000);
-},5000);
+    ima.style.display='none';
+  },2000);
+};
